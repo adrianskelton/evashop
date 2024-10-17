@@ -18,7 +18,7 @@
 
 /* Set the height of the logo */
 .navbar-brand img {
-  height: 100px;
+  height: 100px; 
   width: auto;
   /* Ensure the aspect ratio is maintained */
 }
@@ -28,36 +28,24 @@
             background-color: white;
         }
 
-        /* Navigation links */
-        .navbar-nav .nav-link {
-            color: black;
-            position: relative;
-            padding-left: 30px; /* Space for the stripes */
-        }
+.navbar-nav .nav-link {
+    color: black;
+    position: relative;
+    padding-left: 40px; /* Space for the stripes */
+}
 
-        /* Adding three red stripes on hover */
-        .navbar-nav .nav-link:hover::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 25px;
-            height: 3px;
-            background-color: #fe0000;
-            box-shadow: 0 4px 0 #fe0000, 0 8px 0 #fe0000; /* 3 stripes with spacing */
-        }
-
-        /* Underline effect on hover */
-        .navbar-nav .nav-link:hover::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background-color: black;
-        }
+/* Adding three red stripes on hover */
+.navbar-nav .nav-link:hover::before {
+    content: '';
+    position: absolute;
+    left: 10px; /* Moves the stripes to the left, within the padded space */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px; /* Adjust width for the stripe length */
+    height: 3px; /* Stripe thickness */
+    background-color: #fe0000;
+    box-shadow: 0 6px 0 #fe0000, 0 12px 0 #fe0000; /* 3 stripes with spacing */
+}
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
@@ -107,7 +95,6 @@
             <div class="image-column flex-fill">
                 <div class="image-container">
                     <img src="https://raw.githubusercontent.com/adrianskelton/evashop/refs/heads/main/images/sunflair.jpg" class="img-fluid h-100" alt="Badkläder" style="object-fit: cover;">
-                    <p class="text-center font-weight-bold text-white bg-dark p-2">Nytt i butik</p>
                 </div>
             </div>
             <div class="image-column flex-fill">
