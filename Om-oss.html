@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" type="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.ibb.co/z76SbhV/logo.jpg" alt="Eva Shop Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Om-oss.html/">Om oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Kontakter.html/">Kontakter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!-- Main content -->
+<main class="container mt-5">
+    <!-- Contact Information Section -->
+    <section class="row">
+        <div class="col-md-6">
+            <h2>Kontakta oss</h2>
+            <p><strong>Telefon:</strong> <a href="tel:+46141210279">+46 141 21 02 79</a></p>
+            <p><strong>Adress:</strong> Urban Hjärnes väg 7, 591 30 Motala, Sverige</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="row mt-4">
+        <div class="col-md-8">
+            <h3>Beställ en vara</h3>
+            <p>Fyll i formuläret med följande uppgifter: Namn, e-postadress, telefonnummer och vilken vara du önskar. När varan finns i butik för avhämtning kontaktar vi dig. Välkommen!</p>
+
+            <form action="/submit-order" method="post">
+                <div class="form-group mb-3">
+                    <label for="name">Namn</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Skriv ditt namn">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email">E-postadress</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Skriv din e-postadress">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="phone">Telefonnummer</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required placeholder="Skriv ditt telefonnummer">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="product">Vara</label>
+                    <textarea class="form-control" id="product" name="product" rows="3" required placeholder="Ange vilken vara du önskar beställa"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Skicka beställning</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-light text-center py-4 mt-4">
+        <p>Besök oss i butiken eller på Instagram & Facebook</p>
+        <img src="https://i.ibb.co/qCBqb5s/pexels-armaan-virani-113008946-28844154.jpg" class="img-fluid"
+            alt="Eva Shop">
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
