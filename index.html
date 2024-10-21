@@ -11,50 +11,6 @@
 
     <!-- Custom CSS -->
 <link rel="stylesheet" href="css/style.css" type="stylesheet">
-    <style>
-        body {
-  background-color: white;
-}
-
-/* Set the height of the logo */
-.navbar-brand img {
-  height: 100px; 
-  width: auto;
-  /* Ensure the aspect ratio is maintained */
-}
-
-        /* White background for the menu */
-        .navbar {
-            background-color: white;
-        }
-
-.navbar-nav .nav-link {
-    color: black;
-    position: relative;
-    padding-left: 60px; /* Space for the stripes */
-}
-
-/* Adding three red stripes on hover */
-.navbar-nav .nav-link:hover::before {
-    content: '';
-    position: absolute;
-    left: 10px; /* Moves the stripes to the left, within the padded space */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 25px; /* Adjust width for the stripe length */
-    height: 3px; /* Stripe thickness */
-    background-color: #fe0000;
-    box-shadow: 0 6px 0 #fe0000, 0 12px 0 #fe0000; /* 3 stripes with spacing */
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-weight: 700;
-  font-family: playfair;
-  font-style: italic;
-  line-height: 1.2;
-}
-    </style>
 </head>
 
 <body>
@@ -62,7 +18,7 @@
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="https://i.ibb.co/z76SbhV/logo.jpg" alt="Eva Shop Logo" class="fluid">
+                <img src="https://i.ibb.co/z76SbhV/logo.jpg" alt="Eva Shop Logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,10 +29,10 @@
                         <a class="nav-link" href="#">Hem</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Om-oss/">Om oss</a>
+                        <a class="nav-link" href="Om-oss.html/">Om oss</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Kontakter/">Kontakter</a>
+                        <a class="nav-link" href="Kontakter.html/">Kontakter</a>
                     </li>
                 </ul>
             </div>
@@ -95,6 +51,7 @@
             <div class="image-column flex-fill">
                 <div class="image-container">
                     <img src="https://raw.githubusercontent.com/adrianskelton/evashop/refs/heads/main/images/sunflair.jpg" class="img-fluid h-100" alt="Badkläder" style="object-fit: cover;">
+                    <p class="text-center font-weight-bold text-white bg-dark p-2">Nytt i butik</p>
                 </div>
             </div>
             <div class="image-column flex-fill">
@@ -125,7 +82,7 @@
                 <p>Loungewear</p>
             </div>
             <div class="col-md-3">
-                <img src="https://raw.githubusercontent.com/adrianskelton/evashop/refs/heads/main/images/lounge.png" class="img-fluid" alt="Damkläder">
+                <img src="https://raw.githubusercontent.com/adrianskelton/evashop/refs/heads/main/images/dam.png" class="img-fluid" alt="Damkläder">
                 <p>Damkläder.</p>
             </div>
         </section>
