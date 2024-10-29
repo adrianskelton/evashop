@@ -65,6 +65,13 @@ body {
   gap: 10px;
 }
 
+.logo {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: center;
+  width: 70%;
+}
+
 
 /* MEDIA QUERIES */
 
