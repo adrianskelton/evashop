@@ -59,6 +59,12 @@ body {
   line-height: 1.2;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  gap: 10px;
+}
+
 
 /* MEDIA QUERIES */
 
