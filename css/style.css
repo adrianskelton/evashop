@@ -5,8 +5,7 @@ body {
 /* Set the height of the logo */
 .navbar-brand img {
   height: 100px;
-  width: auto;
-  /* Ensure the aspect ratio is maintained */
+  width: auto; /* Ensure the aspect ratio is maintained */
 }
 
 /* White background for the menu */
@@ -23,34 +22,26 @@ body {
 }
 
 /* Underline effect on hover */
-.navbar-nav .nav-link:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: red; /* Change underline color to red */
-  transition: width 0.3s ease; /* Smooth transition */
-}
-
-/* Initially hide the underline */
 .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0;
+  width: 0; /* Initially hide the underline */
   height: 2px;
-  background-color: red;
-  transition: width 0.3s ease;
+  background-color: red; /* Underline color */
+  transition: width 0.3s ease; /* Smooth transition */
 }
 
+/* Show underline on hover */
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: 700;
-  font-family: playfair;
+  font-family: Playfair, serif; /* Added serif fallback */
   font-style: italic;
   line-height: 1.2;
 }
