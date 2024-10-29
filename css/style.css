@@ -61,15 +61,19 @@ body {
 
 .social-icons {
   display: flex;
-  justify-content: flex-end; /* Align to the right */
-  gap: 10px;
-}
-
-.logo {
-  display: flex;
-  justify-content: flex-start; /* Align to the left */
   align-items: center;
-  width: 70%;
+  gap: 15px; /* Space between icons */
+}
+.social-icons a {
+  color: #333; /* Icon color */
+  font-size: 1.5rem; /* Icon size */
+}
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Center align logo and button vertically */
+}
+.logo {
+  max-height: 50px; /* Set a max height for the logo */
 }
 
 
