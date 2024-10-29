@@ -58,3 +58,13 @@ body {
   font-style: italic;
   line-height: 1.2;
 }
+
+
+/* MEDIA QUERIES */
+
+        /* Hide the Instagram embed for larger screens */
+        @media (min-width: 768px) {
+          .instagram-embed {
+              display: none;
+          }
+      }
