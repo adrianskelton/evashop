@@ -15,10 +15,11 @@ body {
 
 .intro-text { 
   font-size: 16px;
-  background-color: #ff7e5e;
+  background-color: #efb6a7;
   font-family: Playfair, serif; /* Added serif fallback */
   font-style: italic;
   line-height: 1.2; 
+  color: white;
 }
 
 .purchase-block {
