@@ -72,6 +72,15 @@ body {
   display: flex;
   align-items: center; /* Center align logo and button vertically */
 }
+
+.scroller {
+  background-color: #ff7e5e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none; /* Remove default underline */
+}
+
 .logo {
   max-height: 50px; /* Set a max height for the logo */
 }
