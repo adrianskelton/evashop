@@ -92,7 +92,7 @@ body {
 
         /* Hide the Instagram embed for larger screens */
         @media (min-width: 768px) {
-          .instagram-embed {
+          .hide-mobile {
               display: none;
           }
       }
